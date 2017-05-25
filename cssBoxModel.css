@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ div  {
+
+ 		width: 320px;
+ 		padding:15px;
+ 		border:5px solid red;
+ 		margin:0;
+}
+
+</style>
+</head>
+<body>
+<h1> My God is Awesome!!</h1>
+<img src="flower.jpeg" width="350" height="263" alt="flower">
+<div> I love my family</div>
+</body>
+</html>
