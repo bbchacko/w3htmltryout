@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.floating-box  {
+
+	float: left;
+	width: 150px;
+	height: 75px;
+	margin:10px;
+	border: 3px solid red;
+}
+
+.after-box  {
+	clear: left;
+	border: 3px solid blue;
+}
+</style>
+</head>
+<body>
+<h1> MY GOD IS AWESOME!! </h1>
+
+<div class="floating-box"> BENNY's Box </div>
+<div class="floating-box"> Baiju's Box </div>
+<div class="floating-box"> Ancy's Box </div>
+<div class="floating-box"> student's Box </div>
+<div class="floating-box"> Thomas's Box </div>
+<div class="floating-box"> Jancy's Box </div>
+<div class="floating-box"> Vincnet's box </div>
+
+<div class="after-box"> this work was good learning  </div>
+
+
+</body>
+</html>
