@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="demo"></p>
+
+<script>
+var text;
+	switch (new Date().getDay()) {
+		case 6:
+			text = "Today is Saturday!";
+			break;
+		case 0:
+			text = "Today is Sunday!";
+			break;
+		default:
+			text = "Have a nice weekend!!";
+	}
+document.getElementById('demo').innerHTML = text;
+</script>
+
+
+
+
+</body>
+</html>
