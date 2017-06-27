@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="demo"></p>
+
+<script>
+	
+	var num = 1;
+
+	try {
+		num.toPrecision(500);
+	}
+
+catch(err)	{
+
+	document.getElementById('demo').innerHTML = err.name;
+
+}
+
+</script>
+
+
+
+</body>
+</html>
