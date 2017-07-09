@@ -7,27 +7,25 @@
 
 <h2>The XMLHttpRequest Object</h2>
 
-<button type="button" onclick="loadDoc()"> Request data</button>
+<button type ="button" onclick="loadDoc()">Request data</button>
 
 <p id="demo"></p>
 
 <script>
 	
 function loadDoc() {
-
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status ==200)  {
-
-			document.getElementById('demo').innerHTML = this.responseText;
+		if (this.readyState == 4 && this.status == 200) {
+		document.getElementById('demo').innerHTML = this.responseText;
 		}
 	};
-	xhttp.open("GET", "demo_get.asp", true);
+	xhttp.open("GET", "demo_get2.asp?fname=Henery&1name=Ford", true);
 	xhttp.send();
 
 }
-</script>
 
+</script>
 
 
 </body>
