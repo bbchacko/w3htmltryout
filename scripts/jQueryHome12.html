@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+	
+$(document).ready(function(){
+	$("p").on({
+		mouseenter: function(){
+			$(this).css("background-color", "lightblue");
+		},
+		mouseleave: function(){
+			$(this).css("background-color", "lightgreen");
+		},
+		click: function(){
+			$(this).css("background-color","purple");
+		}
+	});
+});
+
+</script>
+</head>
+<body>
+<p> GOD is LOVE!!</p>
+</body>
+</html>
