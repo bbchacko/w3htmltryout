@@ -1,0 +1,8 @@
+class Button1 extends 						React.Component{
+	render(){
+		return (
+			<button>HI</button>
+);
+}
+}
+ReactDOM.render(<Button1/>, mountNode);

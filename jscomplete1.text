@@ -1,0 +1,8 @@
+const Button = 
+(prop) =>{
+return (
+<button>dd</button>
+);
+}
+
+ReactDOM.render(<Button/>, mountNode);

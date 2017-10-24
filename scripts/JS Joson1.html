@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h2>Convert a JavaScript object into a JSON string, and send it to the server.</h2>
+
+<script>
+	var myObj={"name":"John","age":31,"city":"New York"};
+	var myJSON=JSON.stringfy(myObj); 
+	window.location ="demo_json.php?x=" +myJOSN;
+
+</script>
+
+<body>
+	<p>How ot access nested JSON objects.</p>
+
+	<p id="demo"></p>
+
+<script type="text/javascript">
+	
+	var myObj= {
+		"name": "John",
+		"age":30,
+		"cars": {
+		"car1":"Ford",
+		"car2":"BMW",
+		"car3":"Fiat"
+	}
+	}
+document.getElementById("demo").innerHTML += myObj.cars.car2 + "<br>";
+document.getElementById("demo").innerHTML += myObj.cars["car2"];
+</script>
+
+<script type="text/javascript">
+	var myObj, i, j, x = "";
+	myObj = {
+		"name":"John",
+		    "cars": [
+        { "name":"Ford", "models":[ "Fiesta", "Focus", "Mustang" ] },
+        { "name":"BMW", "models":[ "320", "X3", "X5" ] },
+        { "name":"Fiat", "models":[ "500", "Panda" ] }
+    ]
+}
+
+for (i in myObj.cars) {
+    x += "<h2>" + myObj.cars[i].name + "</h2>";
+    for (j in myObj.cars[i].models) {
+        x += myObj.cars[i].models[j] + "<br>";
+    }
+}
+
+document.getElementById("demo").innerHTML = x;
+
+</script>
+
+
+</body>
+
+
+
+
+
+</html>
